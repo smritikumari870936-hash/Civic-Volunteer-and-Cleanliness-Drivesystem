@@ -1,0 +1,463 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f8f4;
+    color: #263b2b;
+}
+
+
+/* NAVIGATION BAR */
+
+header {
+    background-color: #1b4332;
+    padding: 20px 7%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #95d5b2;
+}
+
+
+/* LOGO */
+
+.logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #d8f3dc;
+    color: #1b4332;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.logo-text small {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0;
+    font-weight: normal;
+    margin-top: 4px;
+    color: #d8f3dc;
+}
+
+
+/* FULL WIDTH PHOTO BANNER */
+
+.photo-banner {
+    display: flex;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.photo-banner img {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+    padding: 55px 8%;
+    background: linear-gradient(135deg, #2d6a4f, #74c69d);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.hero-aim {
+    max-width: 850px;
+    margin: 0 auto 35px;
+}
+
+.hero-aim h2 {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.hero-aim p {
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* EXPLORE EVENTS BUTTON */
+
+.hero-btn {
+    display: inline-block;
+    background: white;
+    color: #1b4332;
+    padding: 13px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background: #d8f3dc;
+}
+
+
+/* EVENTS SECTION */
+
+.events {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.events h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.events > p {
+    margin-bottom: 25px;
+}
+
+
+/* CATEGORY FILTER BUTTONS */
+
+.categories {
+    margin-bottom: 35px;
+}
+
+.categories button {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d8f3dc;
+    color: #1b4332;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.categories button:hover {
+    background-color: #2d6a4f;
+    color: white;
+}
+
+
+/* EVENT CONTAINER */
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* EVENT CARDS */
+
+.event-card {
+    display: flex;
+    align-items: stretch;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    border-left: 5px solid #40916c;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* EVENT IMAGES */
+
+.event-card > img {
+    width: 38%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+
+/* EVENT INFORMATION */
+
+.event-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.event-info h2 {
+    font-size: 19px;
+    color: #2d6a4f;
+    margin-bottom: 15px;
+}
+
+.event-info p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+/* JOIN EVENT BUTTON */
+
+.event-info button {
+    background: #2d6a4f;
+    color: white;
+    padding: 10px 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.event-info button:hover {
+    background: #1b4332;
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+    background-color: #d8f3dc;
+    padding: 55px 10%;
+    text-align: center;
+}
+
+.about h1 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    line-height: 1.7;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* LOGIN PAGE */
+
+.login-page {
+    min-height: 100vh;
+    background: #f4f8f4;
+}
+
+.login-section {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 20px;
+    background: linear-gradient(135deg, #2d6a4f, #74c69d);
+}
+
+.login-box {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.login-box h1 {
+    text-align: center;
+    color: #2d6a4f;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #1b4332;
+}
+
+
+/* LOGIN AND SIGN UP SWITCH */
+
+.switch-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.switch-text a {
+    color: #2d6a4f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* BACK TO HOME LINK */
+
+.back-home {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #2d6a4f;
+    text-decoration: none;
+}
+
+
+/* REGISTRATION SUCCESS MESSAGE */
+
+#form-message {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+    line-height: 1.5;
+    border-radius: 6px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .photo-banner {
+        height: 180px;
+    }
+
+    .photo-banner img {
+        width: 25%;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero-aim h2 {
+        font-size: 23px;
+    }
+
+    .hero-aim p {
+        font-size: 14px;
+    }
+
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card > img {
+        width: 35%;
+        min-height: 220px;
+    }
+
+    .event-info {
+        padding: 12px;
+    }
+
+    .event-info h2 {
+        font-size: 16px;
+    }
+
+    .event-info p {
+        font-size: 12px;
+    }
+
+}

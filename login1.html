@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Green Community - Login</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body class="login-page">
+
+    <!-- Navigation Bar -->
+
+    <header>
+
+        <nav>
+
+            <h2 class="logo">
+
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24" width="30" height="30"
+                         fill="none" stroke="currentColor"
+                         stroke-width="2" stroke-linecap="round">
+                        <path d="M12 21V11"/>
+                        <path d="M12 14C4 14 3 7 3 3c7 0 11 3 9 11"/>
+                        <path d="M12 17c0-6 4-10 9-10 0 6-2 10-9 10"/>
+                    </svg>
+                </span>
+
+                <span class="logo-text">
+                    GREEN COMMUNITY
+                    <small>Together for a cleaner tomorrow</small>
+                </span>
+
+            </h2>
+
+            <ul>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="index1.html#events">Events</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Login and Registration Section -->
+
+    <section class="login-section">
+
+        <div class="login-box">
+
+            <h1 id="form-title">Welcome Back!</h1>
+
+            <p id="form-subtitle">
+                Login to become a part of our community.
+            </p>
+
+
+            <form id="userForm">
+
+                <!-- Full Name Field -->
+
+                <div id="name-field" style="display:none;">
+
+                    <label>Full Name</label>
+
+                    <input type="text"
+                           id="fullname"
+                           placeholder="Enter your full name">
+
+                </div>
+
+
+                <!-- Email Field -->
+
+                <label>Email Address</label>
+
+                <input type="email"
+                       id="email"
+                       placeholder="Enter your email"
+                       required>
+
+
+                <!-- Password Field -->
+
+                <label>Password</label>
+
+                <input type="password"
+                       id="password"
+                       placeholder="Enter your password"
+                       required>
+
+
+                <!-- Confirm Password Field -->
+
+                <div id="confirm-field" style="display:none;">
+
+                    <label>Confirm Password</label>
+
+                    <input type="password"
+                           id="confirm-password"
+                           placeholder="Confirm your password">
+
+                </div>
+
+
+                <button type="submit" id="submit-btn">
+                    Login
+                </button>
+
+            </form>
+
+
+            <!-- Success and Error Messages -->
+
+            <p id="form-message"></p>
+
+
+            <!-- Switch Between Login and Sign Up -->
+
+            <p class="switch-text" id="switch-text">
+
+                Don't have an account?
+
+                <a href="#" onclick="switchForm(); return false;">
+                    Sign Up
+                </a>
+
+            </p>
+
+
+            <a href="index1.html" class="back-home">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <script src="script1.js"></script>
+
+</body>
+
+</html>
